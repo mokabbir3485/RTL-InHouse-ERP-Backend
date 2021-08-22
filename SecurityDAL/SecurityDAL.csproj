@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{115E2D16-CEE3-4E13-920A-AE344FBF1991}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SecurityDAL</RootNamespace>
+    <AssemblyName>SecurityDAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DbExecutor">
+      <HintPath>..\DbExecutor\bin\Debug\DbExecutor.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ad_AdditionalAttributeDAO.cs" />
+    <Compile Include="ad_AdditionalAttributeValueDAO.cs" />
+    <Compile Include="ad_AdvancedSearchPropertyDAO.cs" />
+    <Compile Include="ad_ApprovalDAO.cs" />
+    <Compile Include="ad_AssetNatureDAO.cs" />
+    <Compile Include="ad_BankAccountDAO.cs" />
+    <Compile Include="ad_BankDAO.cs" />
+    <Compile Include="ad_BarcodePrintDAO.cs" />
+    <Compile Include="ad_ChargeTypeDAO.cs" />
+    <Compile Include="ad_CompanyAddressDAO.cs" />
+    <Compile Include="ad_CompanyBillPolicyDAO.cs" />
+    <Compile Include="ad_CompanyDAO.cs" />
+    <Compile Include="ad_CurrencyDAO.cs" />
+    <Compile Include="ad_CustomerAddressDAO.cs" />
+    <Compile Include="ad_CustomerBillPolicyDAO.cs" />
+    <Compile Include="ad_CustomerDAO.cs" />
+    <Compile Include="ad_CompanyTypeDAO.cs" />
+    <Compile Include="ad_CustomerTypeDAO.cs" />
+    <Compile Include="ad_DepartmentWiseSectionDAO.cs" />
+    <Compile Include="Rpt_MonthYearDAO.cs" />
+    <Compile Include="ad_SectionDAO.cs" />
+    <Compile Include="ad_DepartmentDAO.cs" />
+    <Compile Include="ad_DepartmentTypeDAO.cs" />
+    <Compile Include="ad_DesignationDAO.cs" />
+    <Compile Include="ad_DomainDAO.cs" />
+    <Compile Include="ad_EmployeeDAO.cs" />
+    <Compile Include="ad_FinalPriceConfigDAO.cs" />
+    <Compile Include="ad_FinalPriceConfigDetailApplyOnDAO.cs" />
+    <Compile Include="ad_FinalPriceConfigDetailDAO.cs" />
+    <Compile Include="ad_ItemAdditionalAttributeDAO.cs" />
+    <Compile Include="ad_ItemAdditionalAttributeValueDAO.cs" />
+    <Compile Include="ad_ItemAssemblyDAO.cs" />
+    <Compile Include="ad_ChargeTypeApplyDAO.cs" />
+    <Compile Include="ad_ItemChargeDAO.cs" />
+    <Compile Include="ad_ItemHsCodeDAO.cs" />
+    <Compile Include="ad_ItemDAO.cs" />
+    <Compile Include="ad_ItemPriceByAttributeDAO.cs" />
+    <Compile Include="ad_ItemPriceDAO.cs" />
+    <Compile Include="ad_ItemStateDAO.cs" />
+    <Compile Include="ad_ItemSubCategoryDAO.cs" />
+    <Compile Include="ad_ItemSubCategoryTypeDAO.cs" />
+    <Compile Include="ad_ItemUnitPackageDAO.cs" />
+    <Compile Include="ad_ItemWiseItemStateDAO.cs" />
+    <Compile Include="ad_ItemWiseSupplierDAO.cs" />
+    <Compile Include="ad_LoginLogoutLogDAO.cs" />
+    <Compile Include="ad_NoticeDAO.cs" />
+    <Compile Include="ad_NoticeDetailDAO.cs" />
+    <Compile Include="ad_OverHeadDAO.cs" />
+    <Compile Include="ad_PaymentGroupDAO.cs" />
+    <Compile Include="ad_PaymentTypeDAO.cs" />
+    <Compile Include="ad_PriceTypeDAO.cs" />
+    <Compile Include="ad_RequisitionPurposeDAO.cs" />
+    <Compile Include="ad_ReturnReasonDAO.cs" />
+    <Compile Include="ad_StockAuditGroupDAO.cs" />
+    <Compile Include="ad_StockAuditTypeDAO.cs" />
+    <Compile Include="ad_StockDeclarationTypeDAO.cs" />
+    <Compile Include="ad_StockMovementMethodDAO.cs" />
+    <Compile Include="ad_SupplierAddressDAO.cs" />
+    <Compile Include="ad_SupplierBillPolicyDAO.cs" />
+    <Compile Include="ad_SupplierDAO.cs" />
+    <Compile Include="ad_BranchGroupDAO.cs" />
+    <Compile Include="ad_BranchDAO.cs" />
+    <Compile Include="ad_SupplierTypeDAO.cs" />
+    <Compile Include="ad_TerminalDAO.cs" />
+    <Compile Include="ad_TransactionTypeDAO.cs" />
+    <Compile Include="ad_TypeWiseBranchDAO.cs" />
+    <Compile Include="ad_BranchTypeDAO.cs" />
+    <Compile Include="ad_ItemCategoryDAO.cs" />
+    <Compile Include="ad_ItemUnitDAO.cs" />
+    <Compile Include="ad_TypeWiseDepartmentDAO.cs" />
+    <Compile Include="ad_UnitConversionDAO.cs" />
+    <Compile Include="ad_ValuationTypeDAO.cs" />
+    <Compile Include="ad_VoidReasonDAO.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="s_ModuleDAO.cs" />
+    <Compile Include="s_PermissionDAO.cs" />
+    <Compile Include="s_PermissionDetailDAO.cs" />
+    <Compile Include="s_RoleDAO.cs" />
+    <Compile Include="s_ScreenDAO.cs" />
+    <Compile Include="s_ScreenDetailDAO.cs" />
+    <Compile Include="s_ScreenLockDAO.cs" />
+    <Compile Include="s_UserDAO.cs" />
+    <Compile Include="s_UserDepartmentDAO.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SecurityEntity\SecurityEntity.csproj">
+      <Project>{2f3c1675-a23c-4702-a96b-2678ec4f94a3}</Project>
+      <Name>SecurityEntity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

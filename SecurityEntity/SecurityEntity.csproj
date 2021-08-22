@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2F3C1675-A23C-4702-A96B-2678EC4F94A3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SecurityEntity</RootNamespace>
+    <AssemblyName>SecurityEntity</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DbExecutor">
+      <HintPath>..\DbExecutor\bin\Debug\DbExecutor.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ad_AdditionalAttribute.cs" />
+    <Compile Include="ad_AdditionalAttributeValue.cs" />
+    <Compile Include="ad_AdvancedSearchProperty.cs" />
+    <Compile Include="ad_Approval.cs" />
+    <Compile Include="ad_AssetNature.cs" />
+    <Compile Include="ad_Bank.cs" />
+    <Compile Include="ad_BankAccount.cs" />
+    <Compile Include="ad_BarcodePrint.cs" />
+    <Compile Include="ad_Branch.cs" />
+    <Compile Include="ad_BranchGroup.cs" />
+    <Compile Include="ad_BranchType.cs" />
+    <Compile Include="ad_ChargeType.cs" />
+    <Compile Include="ad_Company.cs" />
+    <Compile Include="ad_CompanyAddress.cs" />
+    <Compile Include="ad_CompanyBillPolicy.cs" />
+    <Compile Include="ad_Currency.cs" />
+    <Compile Include="ad_CompanyType.cs" />
+    <Compile Include="ad_CustomerType.cs" />
+    <Compile Include="ad_DepartmentWiseSection.cs" />
+    <Compile Include="ad_ItemVat.cs" />
+    <Compile Include="ad_RibbonInPerLabelCarton.cs" />
+    <Compile Include="ad_Section.cs" />
+    <Compile Include="ad_Designation.cs" />
+    <Compile Include="ad_Employee.cs" />
+    <Compile Include="ad_Customer.cs" />
+    <Compile Include="ad_CustomerAddress.cs" />
+    <Compile Include="ad_CustomerBillPolicy.cs" />
+    <Compile Include="ad_Department.cs" />
+    <Compile Include="ad_DepartmentType.cs" />
+    <Compile Include="ad_Domain.cs" />
+    <Compile Include="ad_FinalPriceConfig.cs" />
+    <Compile Include="ad_FinalPriceConfigDetail.cs" />
+    <Compile Include="ad_FinalPriceConfigDetailApplyOn.cs" />
+    <Compile Include="ad_ItemHsCode.cs" />
+    <Compile Include="ad_Item.cs" />
+    <Compile Include="ad_ItemAdditionalAttribute.cs" />
+    <Compile Include="ad_ItemAdditionalAttributeValue.cs" />
+    <Compile Include="ad_ItemAssembly.cs" />
+    <Compile Include="ad_ItemCategory.cs" />
+    <Compile Include="ad_ItemCharge.cs" />
+    <Compile Include="ad_ChargeTypeApply.cs" />
+    <Compile Include="ad_ItemPriceByAttribute.cs" />
+    <Compile Include="ad_ItemPrice.cs" />
+    <Compile Include="ad_ItemState.cs" />
+    <Compile Include="ad_ItemSubCategory.cs" />
+    <Compile Include="ad_ItemSubCategoryType.cs" />
+    <Compile Include="ad_ItemUnit.cs" />
+    <Compile Include="ad_ItemUnitPackage.cs" />
+    <Compile Include="ad_ItemWiseItemState.cs" />
+    <Compile Include="ad_ItemWiseSupplier.cs" />
+    <Compile Include="ad_LoginLogoutLog.cs" />
+    <Compile Include="ad_Notice.cs" />
+    <Compile Include="ad_NoticeDetail.cs" />
+    <Compile Include="ad_OverHead.cs" />
+    <Compile Include="ad_PaymentGroup.cs" />
+    <Compile Include="ad_PaymentType.cs" />
+    <Compile Include="ad_PriceType.cs" />
+    <Compile Include="ad_RequisitionPurpose.cs" />
+    <Compile Include="ad_ReturnReason.cs" />
+    <Compile Include="ad_StockAuditGroup.cs" />
+    <Compile Include="ad_StockAuditType.cs" />
+    <Compile Include="ad_StockDeclarationType.cs" />
+    <Compile Include="ad_StockMovementMethod.cs" />
+    <Compile Include="ad_Supplier.cs" />
+    <Compile Include="ad_SupplierBillPolicy.cs" />
+    <Compile Include="ad_SupplierType.cs" />
+    <Compile Include="ad_Terminal.cs" />
+    <Compile Include="ad_TransactionType.cs" />
+    <Compile Include="ad_TypeWiseBranch.cs" />
+    <Compile Include="ad_TypeWiseDepartment.cs" />
+    <Compile Include="ad_UnitConversion.cs" />
+    <Compile Include="ad_ValuationType.cs" />
+    <Compile Include="ad_VoidReason.cs" />
+    <Compile Include="BaseAddress.cs" />
+    <Compile Include="BaseBillPolicy.cs" />
+    <Compile Include="BaseBranch.cs" />
+    <Compile Include="BaseCustomer.cs" />
+    <Compile Include="BaseDepartment.cs" />
+    <Compile Include="BaseEmployee.cs" />
+    <Compile Include="BaseSupplier.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ad_SupplierAddress.cs" />
+    <Compile Include="s_Module.cs" />
+    <Compile Include="s_Permission.cs" />
+    <Compile Include="s_PermissionDetail.cs" />
+    <Compile Include="Rpt_MonthYear.cs" />
+    <Compile Include="s_Role.cs" />
+    <Compile Include="s_Screen.cs" />
+    <Compile Include="s_ScreenDetail.cs" />
+    <Compile Include="s_ScreenLock.cs" />
+    <Compile Include="s_User.cs" />
+    <Compile Include="s_UserDepartment.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

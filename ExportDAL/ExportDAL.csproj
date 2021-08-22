@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{95863109-E819-44D8-AF4A-460ABCA742DB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ExportDAL</RootNamespace>
+    <AssemblyName>ExportDAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DbExecutor">
+      <HintPath>..\DbExecutor\bin\Debug\DbExecutor.dll</HintPath>
+    </Reference>
+    <Reference Include="ExportEntity">
+      <HintPath>..\ExportEntity\bin\Debug\ExportEntity.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="exp_AmendmentReasonDAO.cs" />
+    <Compile Include="exp_CommercialInvoice_PackingInfoDAO.cs" />
+    <Compile Include="exp_POReferenceDAO.cs" />
+    <Compile Include="exp_TruckChallanDAO.cs" />
+    <Compile Include="exp_UploadAttachmentDAO.cs" />
+    <Compile Include="exp_PutSubmissionDAO.cs" />
+    <Compile Include="exp_CommercialInvoiceInfoDAO.cs" />
+    <Compile Include="exp_ExpReportsDAO.cs" />
+    <Compile Include="exp_ApprovalDAO.cs" />
+    <Compile Include="exp_BankDocumentDAO.cs" />
+    <Compile Include="exp_BankDocumentDetailDAO.cs" />
+    <Compile Include="exp_CommercialInvoiceDAO.cs" />
+    <Compile Include="exp_ConsumptionCertificateDAO.cs" />
+    <Compile Include="exp_ConsumptionCertificateDescriptionDAO.cs" />
+    <Compile Include="exp_ConsumptionCertificateRawMaterialsDAO.cs" />
+    <Compile Include="exp_ExporterDAO.cs" />
+    <Compile Include="exp_InvoiceDAO.cs" />
+    <Compile Include="exp_PackingInfoDAO.cs" />
+    <Compile Include="exp_PaymentProcessDAO.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

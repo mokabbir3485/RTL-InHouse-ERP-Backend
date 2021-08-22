@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{56E9400C-AAE9-480A-B872-38EFDCE67EF7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InventoryEntity</RootNamespace>
+    <AssemblyName>InventoryEntity</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DbExecutor">
+      <HintPath>..\DbExecutor\bin\Debug\DbExecutor.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="inv_BillOfMaterial.cs" />
+    <Compile Include="inv_BillOfMaterialDetail.cs" />
+    <Compile Include="inv_BillOfMaterialOverhead.cs" />
+    <Compile Include="inv_DeliveryChallan.cs" />
+    <Compile Include="inv_InternalWorkOrder.cs" />
+    <Compile Include="inv_InternalWorkOrderDetail.cs" />
+    <Compile Include="inv_InternalWorkOrderReport.cs" />
+    <Compile Include="inv_LocalPurchaseBillDetailSerial.cs" />
+    <Compile Include="inv_OpeningQuantity.cs" />
+    <Compile Include="inv_PurchaseBill.cs" />
+    <Compile Include="inv_PurchaseBillDetail.cs" />
+    <Compile Include="inv_PurchaseBillDetailAdAttribute.cs" />
+    <Compile Include="inv_PurchaseBillDetailAdAttributeDetail.cs" />
+    <Compile Include="inv_PurchaseBillDetailCharge.cs" />
+    <Compile Include="inv_PurchaseBillDetailSerial.cs" />
+    <Compile Include="inv_PurchaseBillOverHead.cs" />
+    <Compile Include="inv_PurchaseOrder.cs" />
+    <Compile Include="inv_PurchaseOrderDetail.cs" />
+    <Compile Include="inv_PurchaseOrderDetailAdAttribute.cs" />
+    <Compile Include="inv_PurchaseOrderDetailAdAttributeDetail.cs" />
+    <Compile Include="inv_PurchaseRequisition.cs" />
+    <Compile Include="inv_Requisition.cs" />
+    <Compile Include="inv_RequisitionDetail.cs" />
+    <Compile Include="inv_RequisitionDetailAdAttribute.cs" />
+    <Compile Include="inv_RequisitionDetailAdAttributeDetail.cs" />
+    <Compile Include="inv_ReturnFromDepartment.cs" />
+    <Compile Include="inv_ReturnFromDepartmentDetail.cs" />
+    <Compile Include="inv_ReturnFromDepartmentDetailAdAttribute.cs" />
+    <Compile Include="inv_ReturnFromDepartmentDetailAdAttributeDetail.cs" />
+    <Compile Include="inv_ReturnToSupplier.cs" />
+    <Compile Include="inv_ReturnToSupplierDetail.cs" />
+    <Compile Include="inv_ReturnToSupplierDetailAdAttribute.cs" />
+    <Compile Include="inv_ReturnToSupplierDetailAdAttributeDetail.cs" />
+    <Compile Include="inv_StockAudit.cs" />
+    <Compile Include="inv_StockAuditDetail.cs" />
+    <Compile Include="inv_StockDeclaration.cs" />
+    <Compile Include="inv_StockDeclarationDetail.cs" />
+    <Compile Include="inv_StockDeclarationDetailAdAttribute.cs" />
+    <Compile Include="inv_StockDeclarationDetailAdAttributeDetail.cs" />
+    <Compile Include="inv_StockDelivery.cs" />
+    <Compile Include="inv_StockDeliveryDetail.cs" />
+    <Compile Include="inv_StockDeliveryDetailAdAttribute.cs" />
+    <Compile Include="inv_StockDeliveryDetailAdAttributeDetail.cs" />
+    <Compile Include="inv_StockDeliveryNonSO.cs" />
+    <Compile Include="inv_StockDeliveryNonSODetail.cs" />
+    <Compile Include="inv_StockIssue.cs" />
+    <Compile Include="inv_StockIssueDetail.cs" />
+    <Compile Include="inv_StockIssueDetailAdAttribute.cs" />
+    <Compile Include="inv_StockReceive.cs" />
+    <Compile Include="inv_StockReceiveDetail.cs" />
+    <Compile Include="inv_StockReceiveExtraInfo.cs" />
+    <Compile Include="inv_StockValuation.cs" />
+    <Compile Include="inv_StockValuationAttribute.cs" />
+    <Compile Include="inv_StockValuationTest.cs" />
+    <Compile Include="inv_StockValuationSetup.cs" />
+    <Compile Include="inv_StoreWiseItemReorderLevel.cs" />
+    <Compile Include="inv_StoreWiseItemReorderLevelLog.cs" />
+    <Compile Include="inv_LocalPurchaseBill.cs" />
+    <Compile Include="inv_LocalPurchaseBillDetail.cs" />
+    <Compile Include="proc_SupplierLedger.cs" />
+    <Compile Include="proc_SupplierPayment.cs" />
+    <Compile Include="proc_SupplierPaymentAdjustment.cs" />
+    <Compile Include="proc_SupplierPaymentAdjustmentDetail.cs" />
+    <Compile Include="proc_SupplierPaymentDetail.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="pro_Production.cs" />
+    <Compile Include="pro_ProductionDetail.cs" />
+    <Compile Include="inv_PurchaseBill_Mushak.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

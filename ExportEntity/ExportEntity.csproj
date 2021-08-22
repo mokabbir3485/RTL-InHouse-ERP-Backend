@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{039EACB8-FEC4-4343-A03D-D235BF6EF998}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ExportEntity</RootNamespace>
+    <AssemblyName>ExportEntity</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="exp_AmendmentReason.cs" />
+    <Compile Include="exp_Approval.cs" />
+    <Compile Include="exp_BankDocument.cs" />
+    <Compile Include="exp_BankDocumentDetail.cs" />
+    <Compile Include="exp_CommercialInvoiceDetail.cs" />
+    <Compile Include="exp_CommercialInvoice.cs" />
+    <Compile Include="exp_CommercialInvoiceDetail_ModifiedData.cs" />
+    <Compile Include="exp_CommercialInvoiceDetail_TableHtml.cs" />
+    <Compile Include="exp_CommercialInvoiceInfo.cs" />
+    <Compile Include="exp_CommercialInvoice_PackingInfo.cs" />
+    <Compile Include="exp_ConsumptionCertificate.cs" />
+    <Compile Include="exp_ConsumptionCertificateDescription.cs" />
+    <Compile Include="exp_ConsumptionCertificateRawMaterials.cs" />
+    <Compile Include="exp_TruckChallan.cs" />
+    <Compile Include="exp_Exporter.cs" />
+    <Compile Include="exp_Invoice.cs" />
+    <Compile Include="exp_POReference.cs" />
+    <Compile Include="xRpt_exp_CI_Info_Detail.cs" />
+    <Compile Include="xRpt_exp_CI_Master.cs" />
+    <Compile Include="xRpt_exp_ConsumptionCertificate.cs" />
+    <Compile Include="xRpt_exp_PI_Master.cs" />
+    <Compile Include="xRpt_exp_PI_Detail.cs" />
+    <Compile Include="exp_InvoiceDetail_ModifiedData.cs" />
+    <Compile Include="exp_InvoiceDetail_TableHtml.cs" />
+    <Compile Include="exp_InvoiceDetail.cs" />
+    <Compile Include="exp_ExportReports.cs" />
+    <Compile Include="exp_Item.cs" />
+    <Compile Include="exp_PackingInfo.cs" />
+    <Compile Include="exp_PaymentProcess.cs" />
+    <Compile Include="exp_UploadAttachment.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
